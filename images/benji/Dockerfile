@@ -35,11 +35,14 @@ ENV VENV_DIR /benji
 ENV PATH $VENV_DIR/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/bin
 
 LABEL org.label-schema.schema-version="1.0" \
+      org.label-schema.name="Benji" \
+      org.label-schema.vendor="Benji's contributors" \
+      org.label-schema.url="https://benji-backup.me/" \
+      org.label-schema.license="LGPLv3" \
       org.label-schema.vcs-ref="$VCS_REF" \
       org.label-schema.vcs-url="$VCS_URL" \
       org.label-schema.build-date="$BUILD_DATE" \
-      org.label-schema.version="$VERSION" \
-      org.label-schema.url="https://benji-backup.me/"
+      org.label-schema.version="$VERSION"
 
 COPY --from=build /etc/yum.repos.d/ceph.repo /etc/yum.repos.d/ceph.repo
 

@@ -70,7 +70,7 @@ benji:
       readOnly: true
 
 fsfreeze:
-  enabled: True
+  enabled: true
 
   image:
     registry: docker.io
